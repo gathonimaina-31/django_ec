@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # products/models.py
 
 from django.db import models
@@ -45,3 +46,12 @@ class Product(models.Model):
     # Helper for template display
     def get_display_price(self):
         return f"${self.price:,.2f}"
+=======
+from django.db import models
+
+class Category(models.Model):
+    name = models.CharField(max_length= 200)
+    
+    def __str__(self):
+        return self.name
+>>>>>>> c946b71a4c3b62e9828adb53471db512e5008ef9
